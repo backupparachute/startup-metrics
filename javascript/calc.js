@@ -102,8 +102,8 @@ function calcTotals(event) {
     // run rate
     let tot_monthly_rev = document.querySelector('#total-monthly-revenue').value;
 
-    let rr = tot_monthly_rev / 12;
-    document.querySelector('#run-rate').value = rr.toFixed(1);
+    let rr = tot_monthly_rev * 12;
+    document.querySelector('#run-rate').value = to_currency(rr);
 }
 
 function to_percent(num) {

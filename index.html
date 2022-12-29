@@ -55,7 +55,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<div class="card mb-3">
+					<div class="card mb-3 h-100">
 					  <div class="card-body">
 					    <h5 class="card-title">Runway <small>(months)</small> </h5>
 
@@ -100,7 +100,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<div class="card mb-3">
+					<div class="card mb-3 h-100">
 						<div class="card-body">
 							<h5 class="card-title">Recurring Revenue </h5>
 
@@ -144,7 +144,7 @@
 				<div class="row mt-4">
 
 				<div class="col-md-4">
-					<div class="card mb-3">
+					<div class="card mb-3 h-100">
 						<div class="card-body">
 							<h5 class="card-title">Burn Multiple <small> <a href="https://sacks.substack.com/p/the-burn-multiple-51a7e43cb200?utm_source=backupparachute.com&utm_campaign=startup_metrics" target="_blank"><i class="bi bi-question-circle"></i></a> </small></h5>
 
@@ -200,7 +200,7 @@
 
 				<div class="col-md-4">
 
-					<div class="card mb-3">
+					<div class="card mb-3 h-100">
 						<div class="card-body">
 
 							<table class="table">
@@ -241,7 +241,7 @@
 				</div> <!-- end of column -->
 
 				<div class="col-md-4">
-					<div class="card mb-3">
+					<div class="card mb-3 h-100">
 						<div class="card-body">
 							<h5 class="card-title">Compound Monthly Growth Rate  </h5>
 
@@ -313,7 +313,7 @@
 
 			<div class="col-md-4">
 
-				<div class="card mb-3 " >
+				<div class="card mb-3 h-100 " >
 					<div class="card-body ">
 						<h5 class="card-title">Churn Rate  </h5>
 
@@ -370,14 +370,43 @@
 
 	<div class="col-md-4">
 
-		<div class="card mb-3">
-			<div class="card-body">
-				<h5 class="card-title">Active Users  </h5>
+		<div class="card mb-3 h-100 " >
+			<div class="card-body ">
+				<h5 class="card-title">Run Rate </h5>
 
-				<p>A startup should have an incredibly simple way of defining an "active" user.  It will differ dramatically in some cases, is an active user someone who logs into your app, or someone who performs some action within it?  Aim for a measurement that truthfully reflects your expectations and goals for your users, as well as what represents a user getting value from your product.</p>
+				<p><small>Do not confuse this with your recurring revenue.  Your run rate is the annualized sum of ALL revenue (including non-subscription revenue)</small></p>
+
+				<label for="sba-loan-payment">Total Monthly Revenue</label>
+				<div class="input-group input-group-sm mb-3">
+
+						<div class="input-group-prepend">
+							<span class="input-group-text">$</span>
+						</div>
+						<input class="form-control" type="text" name="total-monthly-revenue" value="10000" min="0" step="" id="total-monthly-revenue" >
+						<!-- <div class="input-group-append">
+							<span class="input-group-text">.00</span>
+						</div> -->
+
+				</div>
+
+			<label for="total-monthly-exp">Annual Run Rate</label>
+				<div class="input-group input-group-sm mb-3">
+					<!-- <div class="input-group-prepend">
+						<span class="input-group-text">$</span>
+					</div> -->
+						<input class="form-control" type="text" name="run-rate" value="" min="0" step="1" id="run-rate" disabled>
+					<!-- <div class="input-group-append">
+						<span class="input-group-text">.00</span>
+					</div> -->
+				</div>
+				<!-- <label for="total-monthly-exp">Total Annual Expenses</label>
+				<div class="input-group input-group-sm mb-3">
+						<input class="form-control" type="text" name="total-annual-exp" value="" min="0" step="1" id="total-annual-exp" disabled>
+				</div> -->
+
+			</div>
 
 	</div>
-</div>
 
 
 </div> <!-- end of col -->
@@ -385,7 +414,7 @@
 
 	<div class="col-md-4">
 
-		<div class="card mb-3">
+		<div class="card mb-3 h-100">
 			<div class="card-body">
 				<h5 class="card-title">LTV : CAC Ratio</h5>
 
@@ -448,54 +477,26 @@
 
 	<div class="col-md-4">
 
-		<div class="card mb-3 " >
-			<div class="card-body ">
-				<h5 class="card-title">Run Rate </h5>
+		<div class="card mb-3 h-100">
+			<div class="card-body">
+				<h5 class="card-title">Active Users  </h5>
 
-				<p>Do not confuse this with your recurring revenue.  Your run rate is the annualized sum of ALL revenue (including non-subscription revenue)</p>
-
-				<label for="sba-loan-payment">Total Monthly Revenue</label>
-				<div class="input-group input-group-sm mb-3">
-
-						<div class="input-group-prepend">
-							<span class="input-group-text">$</span>
-						</div>
-						<input class="form-control" type="text" name="total-monthly-revenue" value="100" min="0" step="" id="total-monthly-revenue" >
-						<!-- <div class="input-group-append">
-							<span class="input-group-text">.00</span>
-						</div> -->
-
-				</div>
-
-			<label for="total-monthly-exp">Run Rate Months</label>
-				<div class="input-group input-group-sm mb-3">
-					<!-- <div class="input-group-prepend">
-						<span class="input-group-text">$</span>
-					</div> -->
-						<input class="form-control" type="text" name="run-rate" value="" min="0" step="1" id="run-rate" disabled>
-					<!-- <div class="input-group-append">
-						<span class="input-group-text">.00</span>
-					</div> -->
-				</div>
-				<!-- <label for="total-monthly-exp">Total Annual Expenses</label>
-				<div class="input-group input-group-sm mb-3">
-						<input class="form-control" type="text" name="total-annual-exp" value="" min="0" step="1" id="total-annual-exp" disabled>
-				</div> -->
-
-			</div>
+				<p>A startup should have an incredibly simple way of defining an "active" user.  It will differ dramatically in some cases, is an active user someone who logs into your app, or someone who performs some action within it?</p><p>Aim for a measurement that truthfully reflects your expectations and goals for your users, as well as what represents a user getting value from your product.</p>
 
 	</div>
+</div>
 
 
 </div> <!-- end of col -->
 
+
 <div class="col-md-4">
 
-	<div class="card mb-3">
+	<div class="card mb-3 h-100">
 		<div class="card-body">
 			<h5 class="card-title">Conversion Rate </h5>
 
-			<p>A conversion rate is the percentage of people who "convert" (i.e. sign up, pay, take the next step, etc) after being shown something (like a landing page, payment screen, or new feature).  Your most important conversion rate is typically payment conversion, but in the early days it may be sign ups or usage of certain features.</p>
+			<p>A conversion rate is the percentage of people who "convert" (i.e. sign up, pay, take the next step, etc) after being shown something (like a landing page, payment screen, or new feature).</p><p>Your most important conversion rate is typically payment conversion, but in the early days it may be sign ups or usage of certain features.</p>
 
 	</div>
 	</div>
@@ -504,11 +505,12 @@
 	</div> <!-- end of col -->
 
 	<div class="col-md-4">
-		<div class="card mb-3">
+		<div class="card mb-3 h-100">
 			<div class="card-body">
 				<h5 class="card-title">Product Market Fit <small> <a href="https://pmfsurvey.com/?utm_source=backupparachute.com&utm_campaign=startup_metrics" target="_blank"><i class="bi bi-question-circle"></i></a> </small></h5>
 
 				<p>Ask your users how disappointed they'd be if they couldn't use your product. If at least 40% says they'd be "very disappointed" then congrats, you're likely starting to see product-market fit.</p>
+				<p>PMF score focuses on the user — their needs, how they actually feel, etc — while NPS is entirely hypothetical ("would you refer...").</p>
 
 			</div>
 		</div>

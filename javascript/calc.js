@@ -57,7 +57,7 @@ function calcTotals(event) {
     // let seller_finance_payments = document.querySelector('#seller-finance-payments').value;
 
     let burn_multiple = net_burn / net_new_arr;
-    document.querySelector('#burn-multiple').value = burn_multiple;
+    document.querySelector('#burn-multiple').value = burn_multiple.toFixed(1);
 
     selectMultiple(burn_multiple);
 
